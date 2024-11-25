@@ -3,6 +3,7 @@
 *,
 *::after,
 *::before {
+    outline: none;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -39,6 +40,7 @@
 }
 
 img {
+    cursor: pointer;
     display: flex;
     width: 100%;
 }
@@ -411,6 +413,10 @@ img.head-img-bg {
     gap: 2rem;
 }
 
+.pro-card, .ser-card {
+    cursor: pointer;
+}
+
 .pro-card h4 {
     margin-block: 1rem 5px;
     font-size: 1.2rem;
@@ -461,6 +467,11 @@ img.head-img-bg {
 
 .client {
     background-color: var(--primary-clr);
+}
+
+.swiper-wrapper {
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 
 .swiper {
